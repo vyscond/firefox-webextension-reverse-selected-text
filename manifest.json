@@ -1,0 +1,35 @@
+{
+
+  "manifest_version": 2,
+  "name": "Copy Selection Reversed",
+  "description": "Adds a context menu item that reverses the selected text to the clipboard",
+  "homepage_url": "https://github.com/vyscond/firefox-webextension-reverse-selected-text",
+  "author": "Ramon Moraes",
+  "developer": {
+    "name": "Ramon Moraes",
+    "url": "https://vyscond.io"
+  }
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "60.0a1"
+    }
+  },
+  "icons": {
+    "16": "icon/label.svg",
+    "32": "icon/label.svg",
+    "48": "icon/label.svg"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+  
+  "permissions": [
+    "menus",
+    "<all_urls>",
+    "clipboardWrite",
+    "clipboardRead"
+  ]
+
+}
